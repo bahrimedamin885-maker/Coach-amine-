@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Mohamed Amin Bahri | Fitness Coach & Personal Trainer</title>
+<meta name="description" content="Mohamed Amin Bahri, ISSA Certified Fitness Coach and Personal Trainer. Personal training, online fitness coaching, muscle building, strength and functional training, built around your goals.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mohamed Amin Bahri | Fitness Coach & Personal Trainer">
+<meta property="og:description" content="ISSA Certified Fitness Coach and Personal Trainer. Personal coaching to transform your body, strength and mindset.">
+<link rel="canonical" href="https://bahrimedamin885-maker.github.io/Coach-amine-/">
+<meta property="og:url" content="https://bahrimedamin885-maker.github.io/Coach-amine-/">
+<meta property="og:site_name" content="Mohamed Amin Bahri">
+<meta property="og:image" content="https://bahrimedamin885-maker.github.io/Coach-amine-/images/hero.jpg">
+<meta property="og:image:alt" content="Mohamed Amin Bahri, Fitness Coach and Personal Trainer">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Mohamed Amin Bahri","jobTitle":"Fitness Coach and Personal Trainer","telephone":"+21644286518","email":"bahrimedamin885@gmail.com","sameAs":["https://instagram.com/Coach_Amine_esthetique"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0A0A0A;
+    --panel:#141412;
+    --panel-2:#1B1A17;
+    --white:#F4F3EF;
+    --grey:#8F8B82;
+    --grey-dim:#57544C;
+    --gold:#C9A860;
+    --gold-dim:#8A7443;
+    --line:#2A2926;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--black);
+    color:var(--white);
+    font-family:'Inter',sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1, h2, h3{
+    font-family:'Archivo Black',sans-serif;
+    font-weight:400;
+    text-transform:uppercase;
+    line-height:1.02;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;text-decoration:none;}
+  img, svg{display:block;max-width:100%;}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 40px;}
+  @media(max-width:640px){.wrap{padding:0 22px;}}
+  ::selection{background:var(--gold);color:var(--black);}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:200;
+    background:rgba(10,10,10,0.75);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1240px;margin:0 auto;padding:22px 40px;
+    display:flex;justify-content:space-between;align-items:center;
+  }
+  .logo{font-family:'Archivo Black';font-size:17px;letter-spacing:0.02em;}
+  .logo span{color:var(--gold);}
+  .nav-links{display:flex;gap:26px;font-size:11px;font-weight:600;letter-spacing:.1em;}
+  .nav-links a{position:relative;padding:4px 0;color:var(--grey);transition:color .2s ease;}
+  .nav-links a:hover{color:var(--white);}
+  .nav-cta{
+    border:1px solid var(--gold);color:var(--gold);
+    padding:11px 22px;font-size:11px;font-weight:700;letter-spacing:0.12em;
+    transition:background .2s ease,color .2s ease;
+  }
+  .nav-cta:hover{background:var(--gold);color:var(--black);}
+
+  /* ---------- FLOATING WHATSAPP ---------- */
+  .wa-float{
+    position:fixed;right:22px;bottom:22px;z-index:220;
+    width:58px;height:58px;border-radius:50%;
+    background:#25D366;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 20px rgba(0,0,0,0.4);
+    transition:transform .2s ease;
+  }
+  .wa-float:hover{transform:scale(1.08);}
+  .wa-float svg{width:30px;height:30px;}
+  /* ---------- HERO ---------- */
+  header.hero{
+    background:#0A0A0A;
+    padding-top:70px;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.05fr 0.95fr;
+    min-height:calc(100vh - 70px);
+  }
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;min-height:auto;}}
+  .hero-text{
+    display:flex;flex-direction:column;justify-content:center;
+    padding:64px 50px 64px 40px;
+  }
+  @media(max-width:640px){.hero-text{padding:40px 22px 50px;}}
+  .hero-photo{position:relative;overflow:hidden;min-height:340px;}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block;position:absolute;inset:0;}
+  .hero-photo::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(90deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0) 18%),
+               linear-gradient(0deg, rgba(10,10,10,0.35) 0%, rgba(10,10,10,0) 30%);
+  }
+  @media(max-width:900px){.hero-photo::after{background:linear-gradient(0deg, rgba(10,10,10,0.75) 0%, rgba(10,10,10,0) 35%);}}
+  .cred-line{
+    font-size:12px;font-weight:700;letter-spacing:0.16em;color:var(--gold);
+    margin-bottom:26px;
+  }
+  h1.hero-title{
+    font-size:clamp(46px,8vw,104px);
+    margin-bottom:30px;
+    max-width:900px;
+  }
+  .hero-sub{
+    font-size:18px;color:var(--grey);max-width:480px;margin-bottom:44px;
+    font-weight:300;
+  }
+  .hero-actions{display:flex;gap:18px;flex-wrap:wrap;}
+  .btn-gold{
+    background:var(--gold);color:var(--black);
+    padding:18px 32px;font-weight:700;font-size:12px;letter-spacing:0.1em;
+    transition:transform .2s ease, background .2s ease;
+    display:inline-block;
+  }
+  .btn-gold:hover{transform:translateY(-2px);background:#DDBE7A;}
+  .btn-outline{
+    border:1px solid var(--grey-dim);color:var(--white);
+    padding:18px 32px;font-weight:700;font-size:12px;letter-spacing:0.1em;
+    transition:border-color .2s ease;
+    display:inline-block;
+  }
+  .btn-outline:hover{border-color:var(--gold);}
+
+  /* ---------- MARQUEE ---------- */
+  .marquee-band{
+    background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    padding:18px 0;overflow:hidden;white-space:nowrap;
+  }
+  .marquee-track{display:inline-block;animation:scroll 26s linear infinite;font-family:'Archivo Black';font-size:15px;letter-spacing:0.06em;}
+  .marquee-track span{margin:0 30px;color:var(--grey);}
+  .marquee-track span.g{color:var(--gold);}
+  @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+  /* ---------- SECTION ---------- */
+  .section{padding:130px 0;}
+  .kicker{font-size:11px;font-weight:700;letter-spacing:0.18em;color:var(--gold);margin-bottom:18px;}
+  h2.section-title{font-size:clamp(32px,4.6vw,54px);}
+  .section-desc{color:var(--grey);font-size:16px;margin-top:20px;max-width:520px;font-weight:300;}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:80px;align-items:center;}
+  @media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:44px;}}
+  .about-portrait{aspect-ratio:4/5;}
+  .about-text p{color:var(--grey);font-size:16px;font-weight:300;margin-bottom:20px;max-width:520px;}
+  .about-stats{display:flex;gap:50px;margin-top:36px;}
+  .about-stats .s-num{font-family:'Archivo Black';font-size:30px;color:var(--gold);}
+  .about-stats .s-lbl{font-size:11px;color:var(--grey);letter-spacing:0.06em;margin-top:4px;}
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:20px;}
+  @media(max-width:900px){.services-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.services-grid{grid-template-columns:1fr;}}
+  .service-card{
+    background:var(--panel);padding:44px 32px;transition:background .25s ease;
+  }
+  .service-card:hover{background:var(--panel-2);}
+  .service-card h3{font-family:'Archivo Black';font-size:19px;margin-bottom:14px;color:var(--white);}
+  .service-card p{color:var(--grey);font-size:14.5px;font-weight:300;}
+  .service-mark{width:26px;height:2px;background:var(--gold);margin-bottom:20px;}
+
+  /* ---------- SYSTEM / PROCESS ---------- */
+  .process-list{margin-top:20px;}
+  .process-row{
+    display:grid;grid-template-columns:120px 1fr;gap:30px;
+    padding:38px 0;border-top:1px solid var(--line);
+  }
+  .process-row:last-child{border-bottom:1px solid var(--line);}
+  .process-num{font-family:'Archivo Black';font-size:44px;color:var(--gold-dim);}
+  .process-row h3{font-family:'Archivo Black';font-size:22px;margin-bottom:8px;}
+  .process-row p{color:var(--grey);font-size:15px;font-weight:300;max-width:480px;}
+  @media(max-width:600px){.process-row{grid-template-columns:60px 1fr;}.process-num{font-size:30px;}}
+
+  /* ---------- PROGRAMS ---------- */
+  .programs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px;}
+  @media(max-width:900px){.programs-grid{grid-template-columns:1fr;}}
+  .plan{
+    position:relative;
+    border:1px solid var(--line);padding:44px 34px;display:flex;flex-direction:column;
+    transition:border-color .2s ease, transform .2s ease;
+  }
+  .plan:hover{border-color:var(--gold-dim);transform:translateY(-4px);}
+  .plan.featured{border-color:var(--gold);background:var(--panel);}
+  .plan-name{font-family:'Archivo Black';font-size:20px;margin-bottom:6px;}
+  .plan-price{font-size:13px;color:var(--gold);letter-spacing:0.08em;font-weight:700;margin-bottom:28px;}
+
+  /* ---------- LEVELS ---------- */
+  .levels-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px;}
+  @media(max-width:900px){.levels-grid{grid-template-columns:1fr;}}
+  .level-card{border:1px solid var(--line);padding:38px 32px;background:var(--panel);}
+  .level-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:0.12em;color:var(--gold);border:1px solid var(--gold-dim);padding:5px 12px;margin-bottom:22px;}
+  .level-card h3{font-family:'Archivo Black';font-size:22px;margin-bottom:14px;}
+  .level-card p{color:var(--grey);font-size:14.5px;font-weight:300;margin-bottom:18px;}
+  .level-card ul{list-style:none;}
+  .level-card li{font-size:13.5px;color:var(--white);padding:8px 0;border-top:1px solid var(--line);}
+  .level-card li:last-child{border-bottom:1px solid var(--line);}
+
+  /* ---------- INTAKE FORM ---------- */
+  .intake{background:var(--panel);}
+  .intake-form{margin-top:20px;max-width:760px;}
+  .intake-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;}
+  @media(max-width:640px){.intake-row{grid-template-columns:1fr;gap:16px;}}
+  .intake-form label{display:block;font-size:11px;font-weight:700;letter-spacing:0.1em;color:var(--grey);margin-bottom:8px;}
+  .intake-form input, .intake-form select, .intake-form textarea{
+    width:100%;background:var(--black);border:1px solid var(--line);color:var(--white);
+    padding:14px 16px;font-family:'Inter';font-size:14px;
+  }
+  .intake-form input:focus, .intake-form select:focus, .intake-form textarea:focus{outline:none;border-color:var(--gold);}
+  .intake-form textarea{resize:vertical;min-height:90px;}
+  .days-check{display:flex;flex-wrap:wrap;gap:10px;}
+  .days-check label{
+    display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:0.04em;color:var(--white);
+    border:1px solid var(--line);padding:9px 14px;cursor:pointer;margin-bottom:0;
+  }
+  .days-check input{width:auto;accent-color:var(--gold);}
+  .intake-submit{
+    margin-top:10px;display:inline-flex;align-items:center;gap:10px;
+    background:var(--gold);color:var(--black);border:none;cursor:pointer;
+    padding:18px 32px;font-weight:700;font-size:12px;letter-spacing:0.1em;font-family:'Inter';
+    transition:background .2s ease;
+  }
+  .intake-submit:hover{background:#DDBE7A;}
+  .plan-feat{list-style:none;flex:1;}
+  .plan-feat li{
+    font-size:14px;color:var(--grey);font-weight:300;padding:12px 0;border-top:1px solid var(--line);
+  }
+  .plan-feat li:last-child{border-bottom:1px solid var(--line);}
+  .plan-cta{margin-top:30px;text-align:center;border:1px solid var(--grey-dim);padding:15px;font-size:12px;font-weight:700;letter-spacing:0.1em;transition:border-color .2s ease,background .2s ease,color .2s ease;}
+  .plan-cta:hover{background:var(--gold);border-color:var(--gold);color:var(--black);}
+
+  /* ---------- WHY ---------- */
+  .why{background:var(--panel);}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;margin-top:20px;}
+  @media(max-width:700px){.why-grid{grid-template-columns:1fr;}}
+  .why-item{display:flex;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);}
+  .why-check{color:var(--gold);font-family:'Archivo Black';font-size:16px;}
+  .why-item p{font-size:15px;color:var(--white);font-weight:400;}
+
+  /* ---------- FINAL CTA ---------- */
+  .final-cta{
+    position:relative;padding:150px 0;text-align:center;overflow:hidden;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .final-cta-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 15%;z-index:0;}
+  .final-cta-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg, rgba(10,10,10,0.88) 0%, rgba(10,10,10,0.94) 100%);}
+  .final-cta .wrap{position:relative;z-index:2;}
+  .final-cta h2{font-size:clamp(34px,6vw,68px);margin-bottom:20px;}
+  .final-cta p{color:var(--grey);font-size:17px;font-weight:300;margin-bottom:40px;}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:40px;align-items:start;}
+  @media(max-width:800px){.contact-grid{grid-template-columns:1fr;}}
+  .contact-list{list-style:none;}
+  .contact-list li{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:26px 0;border-top:1px solid var(--line);
+  }
+  .contact-list li:last-child{border-bottom:1px solid var(--line);}
+  .contact-list .lbl{font-size:12px;color:var(--grey);letter-spacing:0.1em;font-weight:700;}
+  .contact-list .val{font-size:15px;color:var(--white);}
+  .whatsapp-btn{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    background:var(--gold);color:var(--black);padding:22px;font-weight:700;font-size:13px;letter-spacing:0.1em;
+    transition:background .2s ease;
+  }
+  .whatsapp-btn:hover{background:#DDBE7A;}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:60px 0 40px;border-top:1px solid var(--line);}
+  .footer-grid{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+  .footer-name{font-family:'Archivo Black';font-size:14px;}
+  .footer-role{font-size:12px;color:var(--grey);margin-top:4px;}
+  .footer-copy{font-size:12px;color:var(--grey-dim);}
+
+  /* ---------- ACCESSIBILITY ---------- */
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .reveal{opacity:1;transform:none;transition:none;}
+    .marquee-track{animation:none;}
+  }
+
+  /* ---- Phase 1 additions ---- */
+  .nav-right{display:flex;align-items:center;gap:12px}
+  .nav-login{background:none;border:1px solid var(--grey-dim);color:var(--white);padding:11px 18px;font:700 11px 'Inter',sans-serif;letter-spacing:.12em;cursor:pointer}
+  .nav-login:hover{border-color:var(--gold)}
+  .nav-cta{background:var(--gold);color:var(--black)}
+  /* ---------- MOBILE MENU ---------- */
+  .burger{display:none;width:44px;height:44px;padding:10px;border:1px solid var(--line);background:transparent;color:var(--white);cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+  .burger span{display:block;width:20px;height:2px;background:var(--white)}
+  .mobile-panel{position:fixed;top:70px;left:0;right:0;z-index:199;display:none;flex-direction:column;padding:20px 22px 24px;background:rgba(10,10,10,.98);border-bottom:1px solid var(--line);max-height:calc(100vh - 70px);max-height:calc(100dvh - 70px);overflow-y:auto}
+  .mobile-panel.open{display:flex}
+  .mobile-panel a:not(.m-cta):not(.m-login){padding:14px 0;color:var(--grey);font-size:12px;font-weight:700;letter-spacing:.1em;border-bottom:1px solid var(--line)}
+  .mobile-panel .m-cta{margin-top:18px}.mobile-panel .m-login{margin-top:10px}
+  @media(max-width:1100px){.nav-links,.nav-right{display:none}.burger{display:flex}.nav-inner{padding:13px 40px}}
+  @media(max-width:640px){.nav-inner{padding:13px 22px}}
+  @media(min-width:1101px){.mobile-panel{display:none!important}}
+  body{overflow-x:clip}
+  .mobile-panel .m-cta{background:var(--gold);color:var(--black);padding:17px;text-align:center;font:700 14px 'Inter',sans-serif;letter-spacing:.1em}
+  .mobile-panel .m-login{background:none;border:1px solid var(--grey-dim);color:var(--white);padding:16px;font:700 14px 'Inter',sans-serif;letter-spacing:.1em;cursor:pointer}
+  .hero-name{font-family:'Archivo Black';font-size:15px;letter-spacing:.2em;margin-bottom:10px}
+  .hero-title{font-size:clamp(32px,6.2vw,72px)!important;line-height:1.04}
+  .hero-actions a{text-align:center}
+  @media(max-width:520px){.hero-actions{flex-direction:column;gap:12px}.hero-actions a{width:100%;padding:18px 16px}}
+  .plan-note{font-size:12px;color:var(--grey);letter-spacing:.08em;margin:-18px 0 24px}
+  dialog.login{background:var(--panel);color:var(--white);border:1px solid var(--line);padding:32px 26px;width:calc(100% - 32px);max-width:420px}
+  dialog.login::backdrop{background:rgba(0,0,0,.75)}
+  dialog.login h2{font-family:'Archivo Black';font-size:24px;margin-bottom:12px}
+  dialog.login p{color:var(--grey);font-size:14px;margin-bottom:18px;line-height:1.5}
+  dialog.login label{display:block;font-size:12px;letter-spacing:.08em;margin:12px 0 6px}
+  dialog.login input{width:100%;padding:14px;background:var(--black);border:1px solid var(--line);color:var(--white);font:16px 'Inter',sans-serif;opacity:.5}
+  dialog.login .l-row{display:flex;justify-content:space-between;gap:12px;margin-top:16px;font-size:12px;color:var(--grey-dim)}
+  dialog.login .l-btn{width:100%;margin-top:18px;padding:16px;background:var(--grey-dim);color:var(--black);border:0;font:700 12px 'Inter',sans-serif;letter-spacing:.1em}
+  dialog.login .l-close{width:100%;margin-top:12px;padding:16px;background:none;border:1px solid var(--gold);color:var(--gold);font:700 12px 'Inter',sans-serif;letter-spacing:.1em;cursor:pointer}
+
+  /* ---- Phase 2 ---- */
+  a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  .svc-more{display:inline-block;margin-top:16px;font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--gold)}
+  .start-form{margin-top:24px;max-width:760px}
+  .start-form fieldset{border:0;border-top:1px solid var(--line);padding:26px 0}
+  .start-form legend{font-family:'Archivo Black';font-size:15px;letter-spacing:.06em;padding-right:14px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{position:relative}.chip input{position:absolute;opacity:0;inset:0}
+  .chip span{display:block;border:1px solid var(--line);padding:14px 18px;font-size:14px;font-weight:600;cursor:pointer}
+  .chip input:checked+span{border-color:var(--gold);color:var(--gold)}
+  .chip input:focus-visible+span{outline:2px solid var(--gold);outline-offset:3px}
+  .start-form label:not(.chip){display:block;font-size:12px;letter-spacing:.08em;margin:16px 0 6px}
+  .start-form input[type=text], .start-form input[type=email], .start-form select, .start-form textarea{width:100%;padding:14px;background:var(--panel);border:1px solid var(--line);color:var(--white);font:16px 'Inter',sans-serif}
+  .start-form button{margin-top:24px;border:0;cursor:pointer;width:100%}
+  .form-note{font-size:12px;color:var(--grey);margin-top:16px;line-height:1.5}.form-note a{color:var(--gold)}
+  .faq details{border-bottom:1px solid var(--line);padding:20px 0}
+  .faq summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:'+';color:var(--gold);font-size:22px;line-height:1}
+  .faq details[open] summary::after{content:'–'}
+  .faq details p{color:var(--grey);font-size:15px;margin-top:12px;max-width:640px}
+  .cta-row{display:flex;flex-direction:column;gap:12px;margin-top:24px;max-width:340px}.cta-row a{text-align:center}
+  .footer-links{display:flex;flex-wrap:wrap;gap:6px 22px;padding-top:24px;font-size:12px;letter-spacing:.1em;color:var(--grey)}
+  .footer-links a, .footer-links button{color:inherit;background:none;border:0;font:inherit;letter-spacing:inherit;cursor:pointer;padding:8px 0}
+  .footer-links a:hover, .footer-links button:hover{color:var(--gold)}
+
+  /* ---- Images: credentials + transformation ---- */
+  .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:32px}
+  .cert-card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);overflow:hidden;transition:border-color .2s}
+  .cert-card:hover{border-color:var(--gold)}
+  .cert-card img{width:100%;aspect-ratio:3/2;object-fit:contain;object-position:center;background:#111;display:block}
+  .cert-card div{padding:16px 18px;display:flex;flex-direction:column;gap:4px}
+  .cert-card strong{font-size:14px;letter-spacing:.06em}.cert-card span{font-size:12px;color:var(--grey)}
+  .ba-label{font-family:'Archivo Black';font-size:13px;letter-spacing:.14em;color:var(--gold);margin:36px 0 12px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:640px){.ba{grid-template-columns:1fr}}
+  .ba figure{margin:0;position:relative}.ba img{width:100%;height:auto;display:block}
+  .ba figcaption{position:absolute;left:12px;top:12px;background:var(--black);color:var(--gold);font:700 11px 'Inter',sans-serif;letter-spacing:.14em;padding:6px 10px}
+</style>
+<noscript><style>.reveal{opacity:1;transform:none;}</style></noscript>
+</head>
+<body>
+
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">M.A<span>.</span>B</div>
+    <div class="nav-links">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#services">SERVICES</a>
+      <a href="#programs">PROGRAMS</a>
+      <a href="#how-it-works">HOW IT WORKS</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+    <div class="nav-right">
+      <button type="button" class="nav-login" data-open-login>CLIENT LOGIN</button>
+      <a href="#start" class="nav-cta">START COACHING</a>
+    </div>
+    <button type="button" class="burger" id="burgerBtn" aria-label="Menu" aria-controls="mobilePanel" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#services">SERVICES</a>
+  <a href="#programs">PROGRAMS</a>
+  <a href="#how-it-works">HOW IT WORKS</a>
+  <a href="#contact">CONTACT</a>
+  <a href="#start" class="m-cta">START COACHING</a>
+  <button type="button" class="m-login" data-open-login>CLIENT LOGIN</button>
+</div>
+
+<main>
+<header class="hero" id="home">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="hero-name">MOHAMED AMIN BAHRI</div>
+      <div class="cred-line">ISSA CERTIFIED FITNESS COACH &amp; PERSONAL TRAINER</div>
+      <h1 class="hero-title">BUILD STRENGTH.<br>TRANSFORM YOUR BODY.<br>BECOME YOUR BEST VERSION.</h1>
+      <p class="hero-sub">Personalized fitness coaching designed around your goals, your level and your lifestyle.</p>
+      <div class="hero-actions">
+        <a href="#programs" class="btn-gold">START YOUR TRANSFORMATION</a>
+        <a href="#start" class="btn-outline">BOOK A FREE CONSULTATION</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="images/hero.jpg" fetchpriority="high" decoding="async" alt="Mohamed Amin Bahri — back double biceps pose">
+    </div>
+  </div>
+</header>
+
+<div class="marquee-band">
+  <div class="marquee-track">
+    <span>PERSONAL TRAINING</span><span class="g">•</span><span>MUSCLE BUILDING</span><span class="g">•</span><span>FAT LOSS</span><span class="g">•</span><span>STRENGTH TRAINING</span><span class="g">•</span><span>FUNCTIONAL TRAINING</span><span class="g">•</span><span>ONLINE COACHING</span><span class="g">•</span>
+    <span>PERSONAL TRAINING</span><span class="g">•</span><span>MUSCLE BUILDING</span><span class="g">•</span><span>FAT LOSS</span><span class="g">•</span><span>STRENGTH TRAINING</span><span class="g">•</span><span>FUNCTIONAL TRAINING</span><span class="g">•</span><span>ONLINE COACHING</span><span class="g">•</span>
+  </div>
+</div>
+
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <img class="about-portrait reveal" style="object-fit:cover;width:100%;" src="images/portrait.jpg" loading="lazy" decoding="async" alt="Mohamed Amin Bahri — professional portrait">
+    <div class="about-text reveal">
+      <div class="kicker">The Coach</div>
+      <h2 class="section-title">YOUR COACH.<br>YOUR JOURNEY.</h2>
+      <p style="margin-top:26px;">Mohamed Amin Bahri is an ISSA Certified Fitness Coach and Personal Trainer with 6 years of experience helping people build strength, structure and discipline in their training.</p>
+      <p>His approach is built on structured programming, progressive overload and personalized coaching — combining muscle building, strength work and functional training into a system that adapts to your goals, not the other way around.</p>
+      <p>Every client gets a program built around their body, their schedule and their level — with the accountability to actually follow through.</p>
+      <div class="about-stats">
+        <div><div class="s-num">6+</div><div class="s-lbl">YEARS EXPERIENCE</div></div>
+        <div><div class="s-num">ISSA</div><div class="s-lbl">CERTIFIED COACH</div></div>
+      </div>
+      <a href="#start" class="btn-gold" style="margin-top:30px;">WORK WITH ME</a>
+    </div>
+  </div>
+</section>
+<section class="section" id="credentials">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">Credentials</div>
+      <h2 class="section-title">CERTIFIED<br>&amp; QUALIFIED</h2>
+    </div>
+    <div class="cert-grid reveal">
+      <a class="cert-card" href="images/cert-issa-fitness-coach.jpg" target="_blank" rel="noopener"><img src="images/cert-issa-fitness-coach.jpg" width="1300" height="931" loading="lazy" alt="ISSA Fitness Coach certificate of Mohamed Amin Bahri"><div><strong>ISSA — FITNESS COACH</strong><span>International Sports Sciences Association · 27 April 2023</span></div></a>
+      <a class="cert-card" href="images/cert-ifat-personal-trainer.jpg" target="_blank" rel="noopener"><img src="images/cert-ifat-personal-trainer.jpg" width="1300" height="842" loading="lazy" alt="IFAT Certified Personal Trainer certificate of Mohamed Amin Bahri"><div><strong>CERTIFIED PERSONAL TRAINER</strong><span>IFAT · 16 August 2023</span></div></a>
+      <a class="cert-card" href="images/cert-ifat-functional-trainer.jpg" target="_blank" rel="noopener"><img src="images/cert-ifat-functional-trainer.jpg" width="1300" height="924" loading="lazy" alt="IFAT Functional Trainer certificate of Mohamed Amin Bahri"><div><strong>FUNCTIONAL TRAINER</strong><span>IFAT · 16 August 2023</span></div></a>
+      <a class="cert-card" href="images/cert-ifat-floor-coach.jpg" target="_blank" rel="noopener"><img src="images/cert-ifat-floor-coach.jpg" width="1300" height="867" loading="lazy" alt="IFAT Floor Coach certificate of Mohamed Amin Bahri"><div><strong>FLOOR COACH</strong><span>IFAT · 16 August 2023</span></div></a>
+      <a class="cert-card" href="images/cert-ifat-coaching-sportif.jpg" target="_blank" rel="noopener"><img src="images/cert-ifat-coaching-sportif.jpg" width="1300" height="896" loading="lazy" alt="IFAT Coaching Sportif certification of Mohamed Amin Bahri"><div><strong>COACHING SPORTIF</strong><span>IFAT · 16 August 2023 · Mention: Très Bien</span></div></a>
+      <a class="cert-card" href="images/cert-ifat-physical-preparation.jpg" target="_blank" rel="noopener"><img src="images/cert-ifat-physical-preparation.jpg" width="1300" height="917" loading="lazy" alt="IFAT Physical Preparation training certificate of Mohamed Amin Bahri"><div><strong>PRÉPARATION PHYSIQUE</strong><span>IFAT · 16 August 2023</span></div></a>
+      <a class="cert-card" href="images/cert-ifat-biomechanics.jpg" target="_blank" rel="noopener"><img src="images/cert-ifat-biomechanics.jpg" width="1300" height="897" loading="lazy" alt="IFAT Biomechanics training certificate of Mohamed Amin Bahri"><div><strong>BIOMÉCANIQUE</strong><span>IFAT · 16 August 2023</span></div></a>
+    </div>
+    <p class="form-note">Tap a certificate to view it full size. Identity numbers are hidden for privacy. IFAT: Institut de Formation Afro-Tunisien.</p>
+  </div>
+</section>
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">Coaching Services</div>
+      <h2 class="section-title">WHERE TO START</h2>
+      <p class="section-desc">Every program is structured around your goals — from your first session to your long-term progress.</p>
+    </div>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-mark"></div>
+        <h3>PERSONAL TRAINING</h3>
+        <p>One-to-one coaching tailored to individual goals.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-mark"></div>
+        <h3>MUSCLE BUILDING</h3>
+        <p>Structured training focused on muscle growth and progressive overload.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-mark"></div>
+        <h3>FAT LOSS</h3>
+        <p>Training and lifestyle guidance designed to support sustainable fat loss.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-mark"></div>
+        <h3>STRENGTH TRAINING</h3>
+        <p>Build strength, performance and confidence.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-mark"></div>
+        <h3>FUNCTIONAL TRAINING</h3>
+        <p>Improve movement, conditioning, coordination and overall fitness.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-mark"></div>
+        <h3>ONLINE COACHING</h3>
+        <p>Personalized programs and progress monitoring remotely.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-mark"></div>
+        <h3>NUTRITION GUIDANCE</h3>
+        <p>Nutrition guidance linked to your training goals. General guidance only, not medical advice or treatment.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-mark"></div>
+        <h3>ACCOUNTABILITY &amp; MOTIVATION</h3>
+        <p>Follow-up and motivation to help you stay committed to your plan.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="how-it-works" style="background:var(--panel);">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">My Coaching System</div>
+      <h2 class="section-title">HOW IT WORKS</h2>
+    </div>
+    <div class="process-list reveal">
+      <div class="process-row">
+        <div class="process-num">01</div>
+        <div><h3>ASSESS</h3><p>Understand your current level, goals and needs.</p></div>
+      </div>
+      <div class="process-row">
+        <div class="process-num">02</div>
+        <div><h3>PLAN</h3><p>Build a personalized training strategy.</p></div>
+      </div>
+      <div class="process-row">
+        <div class="process-num">03</div>
+        <div><h3>TRAIN</h3><p>Start your program with structured workouts and professional guidance.</p></div>
+      </div>
+      <div class="process-row">
+        <div class="process-num">04</div>
+        <div><h3>TRACK</h3><p>Follow your weight, performance and progress.</p></div>
+      </div>
+      <div class="process-row">
+        <div class="process-num">05</div>
+        <div><h3>ADJUST</h3><p>Update your plan as you progress.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">Training Levels</div>
+      <h2 class="section-title">A PROGRAM FOR<br>EVERY LEVEL</h2>
+      <p class="section-desc">Wherever you're starting from, your program is built around your actual level — not a generic template.</p>
+    </div>
+    <div class="levels-grid reveal">
+      <div class="level-card">
+        <span class="level-tag">LEVEL 01</span>
+        <h3>BEGINNER</h3>
+        <p>Build the foundation — correct form, consistency and confidence in the gym.</p>
+        <ul>
+          <li>Movement &amp; technique fundamentals</li>
+          <li>Progressive, manageable intensity</li>
+          <li>Habit &amp; consistency building</li>
+        </ul>
+      </div>
+      <div class="level-card">
+        <span class="level-tag">LEVEL 02</span>
+        <h3>INTERMEDIATE</h3>
+        <p>Structured progressive overload to break plateaus and build real strength.</p>
+        <ul>
+          <li>Structured progressive overload</li>
+          <li>Targeted muscle-building blocks</li>
+          <li>Performance tracking</li>
+        </ul>
+      </div>
+      <div class="level-card">
+        <span class="level-tag">LEVEL 03</span>
+        <h3>ADVANCED</h3>
+        <p>High-intensity, precision programming for experienced trainees chasing peak results.</p>
+        <ul>
+          <li>Advanced periodization</li>
+          <li>Precision nutrition &amp; recovery</li>
+          <li>Continuous fine-tuning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section why">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">Why Work With Me</div>
+      <h2 class="section-title">BUILT ON RESULTS,<br>NOT PROMISES</h2>
+    </div>
+    <div class="why-grid reveal">
+      <div class="why-item"><span class="why-check">✓</span><p>ISSA Certified</p></div>
+      <div class="why-item"><span class="why-check">✓</span><p>6 Years Experience</p></div>
+      <div class="why-item"><span class="why-check">✓</span><p>Personalized Programs</p></div>
+      <div class="why-item"><span class="why-check">✓</span><p>Online Coaching</p></div>
+      <div class="why-item"><span class="why-check">✓</span><p>Evidence-Based Training Approach</p></div>
+      <div class="why-item"><span class="why-check">✓</span><p>Progress Tracking</p></div>
+      <div class="why-item"><span class="why-check">✓</span><p>Professional Coaching</p></div>
+      <div class="why-item"><span class="why-check">✓</span><p>Motivation &amp; Accountability</p></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="transformation">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">My Transformation</div>
+      <h2 class="section-title">MY OWN<br>TRANSFORMATION</h2>
+      <p class="section-desc">Before and after photos of my own training progress. Results vary from person to person and are never guaranteed.</p>
+    </div>
+    <div class="ba-label">FRONT</div>
+    <div class="ba reveal"><figure><img src="images/transformation-front-before.jpg" width="1000" height="559" loading="lazy" alt="Before: front view of the coach before his transformation"><figcaption>BEFORE</figcaption></figure><figure><img src="images/transformation-front-after.jpg" width="1000" height="559" loading="lazy" alt="After: front view of the coach after his transformation"><figcaption>AFTER</figcaption></figure></div>
+    <div class="ba-label">BACK</div>
+    <div class="ba reveal"><figure><img src="images/transformation-back-before.jpg" width="1000" height="666" loading="lazy" alt="Before: back view of the coach before his transformation"><figcaption>BEFORE</figcaption></figure><figure><img src="images/transformation-back-after.jpg" width="1000" height="666" loading="lazy" alt="After: back view of the coach after his transformation"><figcaption>AFTER</figcaption></figure></div>
+  </div>
+</section>
+<section class="section" id="programs">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">Training Programs</div>
+      <h2 class="section-title">CHOOSE YOUR PATH</h2>
+    </div>
+    <div class="programs-grid reveal">
+      <div class="plan">
+        <div class="plan-name">STARTER</div>
+        <div class="plan-price">4 WEEKS</div>
+        <!-- PRICE: add the real price here when decided -->
+        <div class="plan-note">PRICE — CONTACT ME</div>
+        <ul class="plan-feat">
+          <li>Personalized Workout Plan</li>
+          <li>Basic Nutrition Guidance</li>
+          <li>Progress Tracking</li>
+          <li>Coach Support</li>
+        </ul>
+        <a href="#start" data-program="Starter" class="plan-cta">CHOOSE STARTER</a>
+      </div>
+      <div class="plan featured">
+        <div class="plan-name">TRANSFORM</div>
+        <div class="plan-price">8 WEEKS</div>
+        <!-- PRICE: add the real price here when decided -->
+        <div class="plan-note">PRICE — CONTACT ME</div>
+        <ul class="plan-feat">
+          <li>Personalized Workout Plan</li>
+          <li>Nutrition Guidance</li>
+          <li>Weekly Check-in</li>
+          <li>Progress Tracking</li>
+          <li>Coach Feedback</li>
+          <li>Program Adjustments</li>
+        </ul>
+        <a href="#start" data-program="Transform" class="plan-cta">CHOOSE TRANSFORM</a>
+      </div>
+      <div class="plan">
+        <div class="plan-name">ELITE</div>
+        <div class="plan-price">12 WEEKS</div>
+        <!-- PRICE: add the real price here when decided -->
+        <div class="plan-note">PRICE — CONTACT ME</div>
+        <ul class="plan-feat">
+          <li>Fully Personalized Training</li>
+          <li>Nutrition Guidance</li>
+          <li>Weekly Check-ins</li>
+          <li>Progress Tracking</li>
+          <li>Performance Monitoring</li>
+          <li>Program Adjustments</li>
+          <li>Priority Coach Support</li>
+        </ul>
+        <a href="#start" data-program="Elite" class="plan-cta">CHOOSE ELITE</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="start">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">Start Coaching</div>
+      <h2 class="section-title">START YOUR<br>COACHING JOURNEY</h2>
+    </div>
+    <form id="startForm" class="start-form reveal">
+      <fieldset><legend>STEP 1 — Choose your goal</legend><div class="chips"><label class="chip"><input type="radio" name="goal" value="Muscle Building" required><span>Muscle Building</span></label><label class="chip"><input type="radio" name="goal" value="Fat Loss"><span>Fat Loss</span></label><label class="chip"><input type="radio" name="goal" value="Strength"><span>Strength</span></label><label class="chip"><input type="radio" name="goal" value="Fitness"><span>Fitness</span></label><label class="chip"><input type="radio" name="goal" value="Performance"><span>Performance</span></label></div></fieldset>
+      <fieldset><legend>STEP 2 — Choose your coaching program</legend><div class="chips"><label class="chip"><input type="radio" name="program" value="Starter" required><span>Starter</span></label><label class="chip"><input type="radio" name="program" value="Transform"><span>Transform</span></label><label class="chip"><input type="radio" name="program" value="Elite"><span>Elite</span></label></div></fieldset>
+      <fieldset><legend>STEP 3 — Book a free consultation</legend>
+        <label for="s-name">Name</label><input id="s-name" name="name" type="text" required autocomplete="name">
+        <label for="s-email">Email (optional)</label><input id="s-email" name="email" type="email" autocomplete="email">
+        <label for="s-contact">Preferred contact method</label><select id="s-contact" name="contact"><option>WhatsApp</option><option>Email</option></select>
+        <label for="s-msg">Message (optional)</label><textarea id="s-msg" name="message" rows="3"></textarea>
+        <button type="submit" class="btn-gold">REQUEST CONSULTATION</button>
+        <p class="form-note">This opens WhatsApp or your email app with your details filled in. Nothing is stored on this website, and there is no online payment: pricing is agreed with the coach. Prefer the full intake form? <a href="#join">Open it here</a>.</p>
+      </fieldset>
+    </form>
+  </div>
+</section>
+<section class="section intake" id="join">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">Member Intake Form</div>
+      <h2 class="section-title">JOIN THE PROGRAM</h2>
+      <p class="section-desc">Fill this in and it goes straight to WhatsApp — no account, no hassle.</p>
+    </div>
+    <form class="intake-form reveal" id="intakeForm">
+      <div class="intake-row">
+        <div>
+          <label for="f-name">Full Name</label>
+          <input type="text" id="f-name" required>
+        </div>
+        <div>
+          <label for="f-age">Age</label>
+          <input type="number" id="f-age" min="10" max="90" required>
+        </div>
+      </div>
+      <div class="intake-row">
+        <div>
+          <label for="f-height">Height (cm)</label>
+          <input type="number" id="f-height" min="100" max="230" required>
+        </div>
+        <div>
+          <label for="f-weight">Weight (kg)</label>
+          <input type="number" id="f-weight" min="30" max="250" required>
+        </div>
+      </div>
+      <div style="margin-bottom:20px;">
+        <label for="f-health">Health Issues / Medical History</label>
+        <textarea id="f-health" placeholder="Injuries, chronic pain, allergies, ongoing treatment... (or 'None')"></textarea>
+      </div>
+      <div style="margin-bottom:26px;">
+        <label>Available Training Days</label>
+        <div class="days-check">
+          <label><input type="checkbox" value="Mon">Mon</label>
+          <label><input type="checkbox" value="Tue">Tue</label>
+          <label><input type="checkbox" value="Wed">Wed</label>
+          <label><input type="checkbox" value="Thu">Thu</label>
+          <label><input type="checkbox" value="Fri">Fri</label>
+          <label><input type="checkbox" value="Sat">Sat</label>
+          <label><input type="checkbox" value="Sun">Sun</label>
+        </div>
+      </div>
+      <button type="submit" class="intake-submit">SEND VIA WHATSAPP →</button>
+    </form>
+  </div>
+</section>
+<section class="section faq" id="faq">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">FAQ</div><h2 class="section-title">FREQUENTLY ASKED<br>QUESTIONS</h2></div>
+    <div class="reveal">
+      <details><summary>Who is online coaching for?</summary><p>For anyone who wants structured, personalized training with remote follow-up from the coach.</p></details>
+      <details><summary>Can beginners join?</summary><p>Yes. Programs are built around your level, and the Beginner level focuses on technique, consistency and confidence.</p></details>
+      <details><summary>Can I train at home?</summary><p>Programs are built around your body, schedule and level. Tell the coach what you have available during your consultation.</p></details>
+      <details><summary>Do you provide nutrition guidance?</summary><p>Yes, general nutrition guidance linked to your training goals. It is not medical advice, diagnosis or treatment; for health conditions, consult a doctor.</p></details>
+      <details><summary>How does online coaching work?</summary><p>You start with a consultation, receive a plan built around your goals and level, train on your schedule and share your progress so the coach can follow up.</p></details>
+      <details><summary>How often do we check progress?</summary><p>It depends on the program: Transform and Elite include weekly check-ins, and Starter includes progress tracking.</p></details>
+      <details><summary>Can the program be adjusted?</summary><p>Yes. Transform and Elite include program adjustments based on your progress.</p></details>
+      <details><summary>How do I start?</summary><p>Choose your goal and program in the Start Coaching section and request a free consultation, or message the coach on WhatsApp.</p></details>
+    </div>
+  </div>
+</section>
+<section class="final-cta">
+  <img class="final-cta-img" src="images/alt_back.jpg" loading="lazy" decoding="async" alt="Mohamed Amin Bahri — training">
+  <div class="final-cta-overlay"></div>
+  <div class="wrap reveal">
+    <h2>READY TO TRANSFORM<br>YOUR BODY?</h2>
+    <p>Your next level starts with the first step.</p>
+    <a href="#start" class="btn-gold">START YOUR JOURNEY</a>
+  </div>
+</section>
+<section class="section" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="kicker">Contact</div>
+      <h2 class="section-title">READY TO START?</h2>
+      <p class="section-desc">Reach out and start your coaching journey today.</p>
+      <div class="cta-row"><a href="#start" class="btn-gold">START COACHING</a><a href="#start" class="btn-outline">BOOK A FREE CONSULTATION</a></div>
+    </div>
+    <div class="reveal">
+      <ul class="contact-list">
+        <li><span class="lbl">WHATSAPP</span><span class="val"><a href="https://wa.me/21644286518" target="_blank" rel="noopener">+216 44 286 518</a></span></li>
+        <li><span class="lbl">INSTAGRAM</span><span class="val"><a href="https://instagram.com/Coach_Amine_esthetique" target="_blank" rel="noopener">@Coach_Amine_esthetique</a></span></li>
+        <li><span class="lbl">EMAIL</span><span class="val"><a href="mailto:bahrimedamin885@gmail.com">bahrimedamin885@gmail.com</a></span></li>
+      </ul>
+      <a href="https://wa.me/21644286518" target="_blank" rel="noopener" id="waBtn" class="whatsapp-btn" style="margin-top:24px;">CHAT ON WHATSAPP</a>
+      <a href="https://instagram.com/Coach_Amine_esthetique" target="_blank" rel="noopener" class="btn-outline" style="margin-top:12px;display:block;text-align:center;">INSTAGRAM</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<a class="wa-float" href="https://wa.me/21644286518" target="_blank" rel="noopener" aria-label="Message on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#fff"><path d="M16 2C8.3 2 2 8.3 2 16c0 2.5.7 4.9 1.9 7L2 30l7.2-1.9c2 1.1 4.3 1.7 6.8 1.7 7.7 0 14-6.3 14-14S23.7 2 16 2zm0 25.5c-2.2 0-4.4-.6-6.2-1.7l-.4-.3-4.3 1.1 1.1-4.2-.3-.4C4.6 20.2 4 18.1 4 16 4 9.4 9.4 4 16 4s12 5.4 12 12-5.4 11.5-12 11.5zm6.6-8.6c-.4-.2-2.1-1-2.4-1.2-.3-.1-.6-.2-.8.2-.2.3-.9 1.2-1.1 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.6.1-.3.1-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.3 3.4 1.5 3.6c.2.2 2.5 3.9 6.2 5.4.9.4 1.5.6 2.1.7.9.3 1.7.2 2.3.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.1-.3-.2-.7-.4z"/></svg>
+</a>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="footer-name">MOHAMED AMIN BAHRI</div>
+      <div class="footer-role">Fitness Coach | Personal Trainer</div>
+    </div>
+    <div class="footer-copy">© 2026 Mohamed Amin Bahri. All Rights Reserved.</div>
+  </div>
+  <div class="wrap footer-links">
+    <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#programs">PROGRAMS</a><a href="#how-it-works">HOW IT WORKS</a><a href="#contact">CONTACT</a><button type="button" data-open-login>CLIENT LOGIN</button>
+    <a href="https://instagram.com/Coach_Amine_esthetique" target="_blank" rel="noopener">INSTAGRAM</a><a href="https://wa.me/21644286518" target="_blank" rel="noopener">WHATSAPP</a>
+    <a href="privacy.html">PRIVACY POLICY</a><a href="terms.html">TERMS &amp; CONDITIONS</a>
+  </div>
+</footer>
+
+<dialog class="login" id="loginDialog" aria-labelledby="loginTitle">
+  <h2 id="loginTitle">CLIENT LOGIN</h2>
+  <p>The client area is coming soon. Login is not active yet. To start coaching or ask a question, contact your coach on WhatsApp.</p>
+  <label for="l-email">Email</label><input id="l-email" type="email" disabled>
+  <label for="l-pass">Password</label><input id="l-pass" type="password" disabled>
+  <button class="l-btn" type="button" disabled>LOGIN</button>
+  <div class="l-row"><span>FORGOT PASSWORD</span><span>CREATE ACCOUNT</span></div>
+  <button class="l-close" type="button" id="loginClose">CLOSE</button>
+</dialog>
+
+<script>
+  // Mobile menu
+  const burger = document.getElementById('burgerBtn');
+  const panel = document.getElementById('mobilePanel');
+  const closeMenu = () => { panel.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); };
+  burger.addEventListener('click', () => burger.setAttribute('aria-expanded', String(panel.classList.toggle('open'))));
+  panel.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+  window.matchMedia('(min-width:1101px)').addEventListener('change', closeMenu);
+
+  // Client login (interface only, no backend yet)
+  const loginDlg = document.getElementById('loginDialog');
+  document.querySelectorAll('[data-open-login]').forEach(b => b.addEventListener('click', () => { closeMenu(); loginDlg.showModal(); }));
+  document.getElementById('loginClose').addEventListener('click', () => loginDlg.close());
+  loginDlg.addEventListener('click', e => { if (e.target === loginDlg) loginDlg.close(); });
+
+  // Start coaching: program buttons preselect, form -> WhatsApp or email
+  document.querySelectorAll('[data-program]').forEach(a => a.addEventListener('click', () => {
+    const r = document.querySelector('input[name="program"][value="' + a.dataset.program + '"]'); if (r) r.checked = true;
+  }));
+  const startForm = document.getElementById('startForm');
+  startForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const f = new FormData(startForm);
+    const msg = 'Free consultation request\nName: ' + f.get('name') + '\nGoal: ' + f.get('goal') + '\nProgram: ' + f.get('program') + '\nEmail: ' + (f.get('email') || '-') + '\nMessage: ' + (f.get('message') || '-');
+    if (f.get('contact') === 'Email') location.href = 'mailto:bahrimedamin885@gmail.com?subject=' + encodeURIComponent('Free consultation request') + '&body=' + encodeURIComponent(msg);
+    else window.open('https://wa.me/21644286518?text=' + encodeURIComponent(msg), '_blank');
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // WhatsApp links are set directly in the HTML (wa.me/21644286518)
+
+  // Intake form -> WhatsApp message
+  const intakeForm = document.getElementById('intakeForm');
+  if (intakeForm) {
+    intakeForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('f-name').value.trim();
+      const age = document.getElementById('f-age').value.trim();
+      const height = document.getElementById('f-height').value.trim();
+      const weight = document.getElementById('f-weight').value.trim();
+      const health = document.getElementById('f-health').value.trim() || 'None';
+      const days = Array.from(document.querySelectorAll('.days-check input:checked')).map(el => el.value).join(', ') || 'Not specified';
+
+      const message =
+        'New member intake form:\n' +
+        'Name: ' + name + '\n' +
+        'Age: ' + age + '\n' +
+        'Height: ' + height + ' cm\n' +
+        'Weight: ' + weight + ' kg\n' +
+        'Health issues: ' + health + '\n' +
+        'Available days: ' + days;
+
+      window.open('https://wa.me/21644286518?text=' + encodeURIComponent(message), '_blank');
+    });
+  }
+</script>
+
+</body>
+</html>
