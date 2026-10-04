@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0A0A0A">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<title>Mohamed Amin Bahri — Fitness Coach | Personal Trainer</title>
-<meta name="description" content="Mohamed Amin Bahri — ISSA Certified Fitness Coach and Personal Trainer. Personal coaching designed to transform your body, strength and mindset.">
+<title>Mohamed Amin Bahri | Fitness Coach & Personal Trainer</title>
+<meta name="description" content="Mohamed Amin Bahri, ISSA Certified Fitness Coach and Personal Trainer. Personal training, online fitness coaching, muscle building, strength and functional training, built around your goals.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Mohamed Amin Bahri — Fitness Coach | Personal Trainer">
+<meta property="og:title" content="Mohamed Amin Bahri | Fitness Coach & Personal Trainer">
 <meta property="og:description" content="ISSA Certified Fitness Coach and Personal Trainer. Personal coaching to transform your body, strength and mindset.">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Mohamed Amin Bahri","jobTitle":"Fitness Coach and Personal Trainer","telephone":"+21644286518","email":"bahrimedamin885@gmail.com","sameAs":["https://instagram.com/Coach_Amine_esthetique"]}
@@ -364,45 +364,104 @@
     .reveal{opacity:1;transform:none;transition:none;}
     .marquee-track{animation:none;}
   }
+
+  /* ---- Phase 1 additions ---- */
+  nav{top:0!important}.mobile-panel{top:70px!important;gap:20px;overflow-y:auto}
+  .nav-links{gap:26px;font-size:11px;letter-spacing:.1em}
+  .nav-right{display:flex;align-items:center;gap:12px}
+  .nav-login{background:none;border:1px solid var(--grey-dim);color:var(--white);padding:11px 18px;font:700 11px 'Inter',sans-serif;letter-spacing:.12em;cursor:pointer}
+  .nav-login:hover{border-color:var(--gold)}
+  .nav-cta{background:var(--gold);color:var(--black)}
+  @media(max-width:1100px){.nav-links,.nav-right{display:none}.burger{display:flex}}
+  .mobile-panel .m-cta{background:var(--gold);color:var(--black);padding:17px;text-align:center;font:700 14px 'Inter',sans-serif;letter-spacing:.1em}
+  .mobile-panel .m-login{background:none;border:1px solid var(--grey-dim);color:var(--white);padding:16px;font:700 14px 'Inter',sans-serif;letter-spacing:.1em;cursor:pointer}
+  .hero-name{font-family:'Archivo Black';font-size:15px;letter-spacing:.2em;margin-bottom:10px}
+  .hero-title{font-size:clamp(32px,6.2vw,72px)!important;line-height:1.04}
+  .hero-actions a{text-align:center}
+  @media(max-width:520px){.hero-actions{flex-direction:column;gap:12px}.hero-actions a{width:100%;padding:18px 16px}}
+  .plan-note{font-size:12px;color:var(--grey);letter-spacing:.08em;margin:-18px 0 24px}
+  dialog.login{background:var(--panel);color:var(--white);border:1px solid var(--line);padding:32px 26px;width:calc(100% - 32px);max-width:420px}
+  dialog.login::backdrop{background:rgba(0,0,0,.75)}
+  dialog.login h2{font-family:'Archivo Black';font-size:24px;margin-bottom:12px}
+  dialog.login p{color:var(--grey);font-size:14px;margin-bottom:18px;line-height:1.5}
+  dialog.login label{display:block;font-size:12px;letter-spacing:.08em;margin:12px 0 6px}
+  dialog.login input{width:100%;padding:14px;background:var(--black);border:1px solid var(--line);color:var(--white);font:16px 'Inter',sans-serif;opacity:.5}
+  dialog.login .l-row{display:flex;justify-content:space-between;gap:12px;margin-top:16px;font-size:12px;color:var(--grey-dim)}
+  dialog.login .l-btn{width:100%;margin-top:18px;padding:16px;background:var(--grey-dim);color:var(--black);border:0;font:700 12px 'Inter',sans-serif;letter-spacing:.1em}
+  dialog.login .l-close{width:100%;margin-top:12px;padding:16px;background:none;border:1px solid var(--gold);color:var(--gold);font:700 12px 'Inter',sans-serif;letter-spacing:.1em;cursor:pointer}
+
+  /* ---- Phase 2 ---- */
+  a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  .svc-more{display:inline-block;margin-top:16px;font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--gold)}
+  .start-form{margin-top:24px;max-width:760px}
+  .start-form fieldset{border:0;border-top:1px solid var(--line);padding:26px 0}
+  .start-form legend{font-family:'Archivo Black';font-size:15px;letter-spacing:.06em;padding-right:14px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{position:relative}.chip input{position:absolute;opacity:0;inset:0}
+  .chip span{display:block;border:1px solid var(--line);padding:14px 18px;font-size:14px;font-weight:600;cursor:pointer}
+  .chip input:checked+span{border-color:var(--gold);color:var(--gold)}
+  .chip input:focus-visible+span{outline:2px solid var(--gold);outline-offset:3px}
+  .start-form label:not(.chip){display:block;font-size:12px;letter-spacing:.08em;margin:16px 0 6px}
+  .start-form input[type=text],.start-form input[type=email],.start-form select,.start-form textarea{width:100%;padding:14px;background:var(--panel);border:1px solid var(--line);color:var(--white);font:16px 'Inter',sans-serif}
+  .start-form button{margin-top:24px;border:0;cursor:pointer;width:100%}
+  .form-note{font-size:12px;color:var(--grey);margin-top:16px;line-height:1.5}.form-note a{color:var(--gold)}
+  .faq details{border-bottom:1px solid var(--line);padding:20px 0}
+  .faq summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:'+';color:var(--gold);font-size:22px;line-height:1}
+  .faq details[open] summary::after{content:'–'}
+  .faq details p{color:var(--grey);font-size:15px;margin-top:12px;max-width:640px}
+  .cta-row{display:flex;flex-direction:column;gap:12px;margin-top:24px;max-width:340px}.cta-row a{text-align:center}
+  .footer-links{display:flex;flex-wrap:wrap;gap:6px 22px;padding-top:24px;font-size:12px;letter-spacing:.1em;color:var(--grey)}
+  .footer-links a,.footer-links button{color:inherit;background:none;border:0;font:inherit;letter-spacing:inherit;cursor:pointer;padding:8px 0}
+  .footer-links a:hover,.footer-links button:hover{color:var(--gold)}
+  html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <noscript><style>.reveal{opacity:1;transform:none;}</style></noscript>
 </head>
 <body>
 
-<div class="promo-bar">🔥 <strong>LAUNCH OFFER — 50% OFF</strong> ALL COACHING PROGRAMS — LIMITED TIME</div>
 
 <nav>
   <div class="nav-inner">
     <div class="logo">M.A<span>.</span>B</div>
     <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#programs">Programs</a>
-      <a href="#join">Join</a>
-      <a href="#contact">Contact</a>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#services">SERVICES</a>
+      <a href="#programs">PROGRAMS</a>
+      <a href="#how-it-works">HOW IT WORKS</a>
+      <a href="#contact">CONTACT</a>
     </div>
-    <a href="#contact" class="nav-cta">START YOUR TRANSFORMATION</a>
+    <div class="nav-right">
+      <button type="button" class="nav-login" data-open-login>CLIENT LOGIN</button>
+      <a href="#start" class="nav-cta">START COACHING</a>
+    </div>
     <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-panel" id="mobilePanel">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#programs">Programs</a>
-  <a href="#join">Join</a>
-  <a href="#contact">Contact</a>
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#services">SERVICES</a>
+  <a href="#programs">PROGRAMS</a>
+  <a href="#how-it-works">HOW IT WORKS</a>
+  <a href="#contact">CONTACT</a>
+  <a href="#start" class="m-cta">START COACHING</a>
+  <button type="button" class="m-login" data-open-login>CLIENT LOGIN</button>
 </div>
 
 <main>
-<header class="hero">
+<header class="hero" id="home">
   <div class="hero-grid">
     <div class="hero-text">
-      <div class="cred-line">6 YEARS EXPERIENCE &nbsp;•&nbsp; ISSA CERTIFIED &nbsp;•&nbsp; PERSONAL COACHING</div>
-      <h1 class="hero-title">BUILD YOUR BODY.<br>ELEVATE YOUR LIFE.</h1>
-      <p class="hero-sub">Personal Fitness Coaching designed to transform your body, strength and mindset.</p>
+      <div class="hero-name">MOHAMED AMIN BAHRI</div>
+      <div class="cred-line">ISSA CERTIFIED FITNESS COACH &amp; PERSONAL TRAINER</div>
+      <h1 class="hero-title">BUILD STRENGTH.<br>TRANSFORM YOUR BODY.<br>BECOME YOUR BEST VERSION.</h1>
+      <p class="hero-sub">Personalized fitness coaching designed around your goals, your level and your lifestyle.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn-gold">START YOUR TRANSFORMATION</a>
-        <a href="#about" class="btn-outline">MEET YOUR COACH</a>
+        <a href="#programs" class="btn-gold">START YOUR TRANSFORMATION</a>
+        <a href="#start" class="btn-outline">BOOK A FREE CONSULTATION</a>
       </div>
     </div>
     <div class="hero-photo">
@@ -431,6 +490,7 @@
         <div><div class="s-num">6+</div><div class="s-lbl">YEARS EXPERIENCE</div></div>
         <div><div class="s-num">ISSA</div><div class="s-lbl">CERTIFIED COACH</div></div>
       </div>
+      <a href="#start" class="btn-gold" style="margin-top:30px;">WORK WITH ME</a>
     </div>
   </div>
 </section>
@@ -446,36 +506,54 @@
         <div class="service-mark"></div>
         <h3>PERSONAL TRAINING</h3>
         <p>One-to-one coaching tailored to individual goals.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
       </div>
       <div class="service-card">
         <div class="service-mark"></div>
         <h3>MUSCLE BUILDING</h3>
         <p>Structured training focused on muscle growth and progressive overload.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
       </div>
       <div class="service-card">
         <div class="service-mark"></div>
         <h3>FAT LOSS</h3>
         <p>Training and lifestyle guidance designed to support sustainable fat loss.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
       </div>
       <div class="service-card">
         <div class="service-mark"></div>
         <h3>STRENGTH TRAINING</h3>
         <p>Build strength, performance and confidence.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
       </div>
       <div class="service-card">
         <div class="service-mark"></div>
         <h3>FUNCTIONAL TRAINING</h3>
         <p>Improve movement, conditioning, coordination and overall fitness.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
       </div>
       <div class="service-card">
         <div class="service-mark"></div>
         <h3>ONLINE COACHING</h3>
         <p>Personalized programs and progress monitoring remotely.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-mark"></div>
+        <h3>NUTRITION GUIDANCE</h3>
+        <p>Nutrition guidance linked to your training goals. General guidance only, not medical advice or treatment.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-mark"></div>
+        <h3>ACCOUNTABILITY &amp; MOTIVATION</h3>
+        <p>Follow-up and motivation to help you stay committed to your plan.</p>
+        <a class="svc-more" href="#start">Learn More →</a>
       </div>
     </div>
   </div>
 </section>
-<section class="section" style="background:var(--panel);">
+<section class="section" id="how-it-works" style="background:var(--panel);">
   <div class="wrap">
     <div class="reveal">
       <div class="kicker">My Coaching System</div>
@@ -492,11 +570,15 @@
       </div>
       <div class="process-row">
         <div class="process-num">03</div>
-        <div><h3>TRAIN</h3><p>Follow structured workouts with professional guidance.</p></div>
+        <div><h3>TRAIN</h3><p>Start your program with structured workouts and professional guidance.</p></div>
       </div>
       <div class="process-row">
         <div class="process-num">04</div>
-        <div><h3>PROGRESS</h3><p>Track your results and continuously optimize your program.</p></div>
+        <div><h3>TRACK</h3><p>Follow your weight, performance and progress.</p></div>
+      </div>
+      <div class="process-row">
+        <div class="process-num">05</div>
+        <div><h3>ADJUST</h3><p>Update your plan as you progress.</p></div>
       </div>
     </div>
   </div>
@@ -545,13 +627,14 @@
 <section class="section why">
   <div class="wrap">
     <div class="reveal">
-      <div class="kicker">Why Train With Me</div>
+      <div class="kicker">Why Work With Me</div>
       <h2 class="section-title">BUILT ON RESULTS,<br>NOT PROMISES</h2>
     </div>
     <div class="why-grid reveal">
       <div class="why-item"><span class="why-check">✓</span><p>ISSA Certified</p></div>
       <div class="why-item"><span class="why-check">✓</span><p>6 Years Experience</p></div>
       <div class="why-item"><span class="why-check">✓</span><p>Personalized Programs</p></div>
+      <div class="why-item"><span class="why-check">✓</span><p>Online Coaching</p></div>
       <div class="why-item"><span class="why-check">✓</span><p>Evidence-Based Training Approach</p></div>
       <div class="why-item"><span class="why-check">✓</span><p>Progress Tracking</p></div>
       <div class="why-item"><span class="why-check">✓</span><p>Professional Coaching</p></div>
@@ -567,41 +650,70 @@
     </div>
     <div class="programs-grid reveal">
       <div class="plan">
-        <div class="promo-badge">-50%</div>
         <div class="plan-name">STARTER</div>
-        <div class="plan-price">50% OFF — CONTACT ME</div>
+        <div class="plan-price">4 WEEKS</div>
+        <!-- PRICE: add the real price here when decided -->
+        <div class="plan-note">PRICE — CONTACT ME</div>
         <ul class="plan-feat">
-          <li>Personalized workout program</li>
-          <li>Basic progress tracking</li>
-          <li>Training guidance</li>
+          <li>Personalized Workout Plan</li>
+          <li>Basic Nutrition Guidance</li>
+          <li>Progress Tracking</li>
+          <li>Coach Support</li>
         </ul>
-        <a href="#contact" class="plan-cta">GET STARTED</a>
+        <a href="#start" data-program="Starter" class="plan-cta">CHOOSE STARTER</a>
       </div>
       <div class="plan featured">
-        <div class="promo-badge">-50%</div>
-        <div class="plan-name">TRANSFORMATION</div>
-        <div class="plan-price">50% OFF — CONTACT ME</div>
+        <div class="plan-name">TRANSFORM</div>
+        <div class="plan-price">8 WEEKS</div>
+        <!-- PRICE: add the real price here when decided -->
+        <div class="plan-note">PRICE — CONTACT ME</div>
         <ul class="plan-feat">
-          <li>Personalized training program</li>
-          <li>Progress tracking</li>
-          <li>Nutrition guidance</li>
-          <li>Regular coaching support</li>
+          <li>Personalized Workout Plan</li>
+          <li>Nutrition Guidance</li>
+          <li>Weekly Check-in</li>
+          <li>Progress Tracking</li>
+          <li>Coach Feedback</li>
+          <li>Program Adjustments</li>
         </ul>
-        <a href="#contact" class="plan-cta">GET STARTED</a>
+        <a href="#start" data-program="Transform" class="plan-cta">CHOOSE TRANSFORM</a>
       </div>
       <div class="plan">
-        <div class="promo-badge">-50%</div>
         <div class="plan-name">ELITE</div>
-        <div class="plan-price">50% OFF — CONTACT ME</div>
+        <div class="plan-price">12 WEEKS</div>
+        <!-- PRICE: add the real price here when decided -->
+        <div class="plan-note">PRICE — CONTACT ME</div>
         <ul class="plan-feat">
-          <li>Fully personalized coaching</li>
-          <li>Training + nutrition guidance</li>
-          <li>Progress monitoring</li>
-          <li>Continuous program adjustments</li>
+          <li>Fully Personalized Training</li>
+          <li>Nutrition Guidance</li>
+          <li>Weekly Check-ins</li>
+          <li>Progress Tracking</li>
+          <li>Performance Monitoring</li>
+          <li>Program Adjustments</li>
+          <li>Priority Coach Support</li>
         </ul>
-        <a href="#contact" class="plan-cta">GET STARTED</a>
+        <a href="#start" data-program="Elite" class="plan-cta">CHOOSE ELITE</a>
       </div>
     </div>
+  </div>
+</section>
+<section class="section" id="start">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">Start Coaching</div>
+      <h2 class="section-title">START YOUR<br>COACHING JOURNEY</h2>
+    </div>
+    <form id="startForm" class="start-form reveal">
+      <fieldset><legend>STEP 1 — Choose your goal</legend><div class="chips"><label class="chip"><input type="radio" name="goal" value="Muscle Building" required><span>Muscle Building</span></label><label class="chip"><input type="radio" name="goal" value="Fat Loss"><span>Fat Loss</span></label><label class="chip"><input type="radio" name="goal" value="Strength"><span>Strength</span></label><label class="chip"><input type="radio" name="goal" value="Fitness"><span>Fitness</span></label><label class="chip"><input type="radio" name="goal" value="Performance"><span>Performance</span></label></div></fieldset>
+      <fieldset><legend>STEP 2 — Choose your coaching program</legend><div class="chips"><label class="chip"><input type="radio" name="program" value="Starter"><span>Starter</span></label><label class="chip"><input type="radio" name="program" value="Transform"><span>Transform</span></label><label class="chip"><input type="radio" name="program" value="Elite"><span>Elite</span></label></div></fieldset>
+      <fieldset><legend>STEP 3 — Book a free consultation</legend>
+        <label for="s-name">Name</label><input id="s-name" name="name" type="text" required autocomplete="name">
+        <label for="s-email">Email (optional)</label><input id="s-email" name="email" type="email" autocomplete="email">
+        <label for="s-contact">Preferred contact method</label><select id="s-contact" name="contact"><option>WhatsApp</option><option>Email</option></select>
+        <label for="s-msg">Message (optional)</label><textarea id="s-msg" name="message" rows="3"></textarea>
+        <button type="submit" class="btn-gold">REQUEST CONSULTATION</button>
+        <p class="form-note">This opens WhatsApp or your email app with your details filled in. Nothing is stored on this website, and there is no online payment: pricing is agreed with the coach. Prefer the full intake form? <a href="#join">Open it here</a>.</p>
+      </fieldset>
+    </form>
   </div>
 </section>
 <section class="section intake" id="join">
@@ -652,21 +764,37 @@
     </form>
   </div>
 </section>
+<section class="section faq" id="faq">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">FAQ</div><h2 class="section-title">FREQUENTLY ASKED<br>QUESTIONS</h2></div>
+    <div class="reveal">
+      <details><summary>Who is online coaching for?</summary><p>For anyone who wants structured, personalized training with remote follow-up from the coach.</p></details>
+      <details><summary>Can beginners join?</summary><p>Yes. Programs are built around your level, and the Beginner level focuses on technique, consistency and confidence.</p></details>
+      <details><summary>Can I train at home?</summary><p>Programs are built around your body, schedule and level. Tell the coach what you have available during your consultation.</p></details>
+      <details><summary>Do you provide nutrition guidance?</summary><p>Yes, general nutrition guidance linked to your training goals. It is not medical advice, diagnosis or treatment; for health conditions, consult a doctor.</p></details>
+      <details><summary>How does online coaching work?</summary><p>You start with a consultation, receive a plan built around your goals and level, train on your schedule and share your progress so the coach can follow up.</p></details>
+      <details><summary>How often do we check progress?</summary><p>It depends on the program: Transform and Elite include weekly check-ins, and Starter includes progress tracking.</p></details>
+      <details><summary>Can the program be adjusted?</summary><p>Yes. Transform and Elite include program adjustments based on your progress.</p></details>
+      <details><summary>How do I start?</summary><p>Choose your goal and program in the Start Coaching section and request a free consultation, or message the coach on WhatsApp.</p></details>
+    </div>
+  </div>
+</section>
 <section class="final-cta">
   <img class="final-cta-img" src="images/alt_back.jpg" loading="lazy" decoding="async" alt="Mohamed Amin Bahri — training">
   <div class="final-cta-overlay"></div>
   <div class="wrap reveal">
     <h2>READY TO TRANSFORM<br>YOUR BODY?</h2>
     <p>Your next level starts with the first step.</p>
-    <a href="#contact" class="btn-gold">START YOUR JOURNEY</a>
+    <a href="#start" class="btn-gold">START YOUR JOURNEY</a>
   </div>
 </section>
 <section class="section" id="contact">
   <div class="wrap contact-grid">
     <div class="reveal">
       <div class="kicker">Contact</div>
-      <h2 class="section-title">LET'S TRAIN</h2>
+      <h2 class="section-title">READY TO START?</h2>
       <p class="section-desc">Reach out and start your coaching journey today.</p>
+      <div class="cta-row"><a href="#start" class="btn-gold">START COACHING</a><a href="#start" class="btn-outline">BOOK A FREE CONSULTATION</a></div>
     </div>
     <div class="reveal">
       <ul class="contact-list">
@@ -674,7 +802,8 @@
         <li><span class="lbl">INSTAGRAM</span><span class="val"><a href="https://instagram.com/Coach_Amine_esthetique" target="_blank" rel="noopener">@Coach_Amine_esthetique</a></span></li>
         <li><span class="lbl">EMAIL</span><span class="val"><a href="mailto:bahrimedamin885@gmail.com">bahrimedamin885@gmail.com</a></span></li>
       </ul>
-      <a href="https://wa.me/21644286518" target="_blank" rel="noopener" id="waBtn" class="whatsapp-btn" style="margin-top:24px;">MESSAGE ON WHATSAPP</a>
+      <a href="https://wa.me/21644286518" target="_blank" rel="noopener" id="waBtn" class="whatsapp-btn" style="margin-top:24px;">CHAT ON WHATSAPP</a>
+      <a href="https://instagram.com/Coach_Amine_esthetique" target="_blank" rel="noopener" class="btn-outline" style="margin-top:12px;display:block;text-align:center;">INSTAGRAM</a>
     </div>
   </div>
 </section>
@@ -693,7 +822,22 @@
     </div>
     <div class="footer-copy">© 2026 Mohamed Amin Bahri. All Rights Reserved.</div>
   </div>
+  <div class="wrap footer-links">
+    <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#programs">PROGRAMS</a><a href="#how-it-works">HOW IT WORKS</a><a href="#contact">CONTACT</a><button type="button" data-open-login>CLIENT LOGIN</button>
+    <a href="https://instagram.com/Coach_Amine_esthetique" target="_blank" rel="noopener">INSTAGRAM</a><a href="https://wa.me/21644286518" target="_blank" rel="noopener">WHATSAPP</a>
+    <a href="privacy.html">PRIVACY POLICY</a><a href="terms.html">TERMS &amp; CONDITIONS</a>
+  </div>
 </footer>
+
+<dialog class="login" id="loginDialog" aria-labelledby="loginTitle">
+  <h2 id="loginTitle">CLIENT LOGIN</h2>
+  <p>The client area is coming soon. Login is not active yet. To start coaching or ask a question, contact your coach on WhatsApp.</p>
+  <label for="l-email">Email</label><input id="l-email" type="email" disabled>
+  <label for="l-pass">Password</label><input id="l-pass" type="password" disabled>
+  <button class="l-btn" type="button" disabled>LOGIN</button>
+  <div class="l-row"><span>FORGOT PASSWORD</span><span>CREATE ACCOUNT</span></div>
+  <button class="l-close" type="button" id="loginClose">CLOSE</button>
+</dialog>
 
 <script>
   // Mobile menu
@@ -701,6 +845,25 @@
   const panel = document.getElementById('mobilePanel');
   burger.addEventListener('click', () => panel.classList.toggle('open'));
   panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => panel.classList.remove('open')));
+
+  // Client login (interface only, no backend yet)
+  const loginDlg = document.getElementById('loginDialog');
+  document.querySelectorAll('[data-open-login]').forEach(b => b.addEventListener('click', () => { panel.classList.remove('open'); loginDlg.showModal(); }));
+  document.getElementById('loginClose').addEventListener('click', () => loginDlg.close());
+  loginDlg.addEventListener('click', e => { if (e.target === loginDlg) loginDlg.close(); });
+
+  // Start coaching: program buttons preselect, form -> WhatsApp or email
+  document.querySelectorAll('[data-program]').forEach(a => a.addEventListener('click', () => {
+    const r = document.querySelector('input[name="program"][value="' + a.dataset.program + '"]'); if (r) r.checked = true;
+  }));
+  const startForm = document.getElementById('startForm');
+  startForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const f = new FormData(startForm);
+    const msg = 'Free consultation request\nName: ' + f.get('name') + '\nGoal: ' + f.get('goal') + '\nProgram: ' + (f.get('program') || 'Not chosen yet') + '\nEmail: ' + (f.get('email') || '-') + '\nMessage: ' + (f.get('message') || '-');
+    if (f.get('contact') === 'Email') location.href = 'mailto:bahrimedamin885@gmail.com?subject=' + encodeURIComponent('Free consultation request') + '&body=' + encodeURIComponent(msg);
+    else window.open('https://wa.me/21644286518?text=' + encodeURIComponent(msg), '_blank');
+  });
 
   // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
